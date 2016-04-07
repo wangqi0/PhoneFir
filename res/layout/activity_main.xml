@@ -1,0 +1,96 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:qumiadsdk="http://schemas.android.com/apk/res/com.example.phonefir"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <com.newqm.sdkoffer.AdView
+        android:id="@+id/adView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <TextView
+            android:id="@+id/aaaaa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:text="请在下面输入你要拨打的电话号码"
+            android:textColor="#995555"
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/et_666"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_below="@+id/aaaaa"
+            android:layout_margin="20dp"
+            android:hint=".."
+            android:maxLength="11"
+            android:phoneNumber="true" />
+
+        <TextView
+            android:id="@+id/bbbbb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/et_666"
+            android:layout_centerHorizontal="true"
+            android:text="请在下面输入你要拨打电话的次数"
+            android:textColor="#995555"
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/et_777"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_below="@+id/bbbbb"
+            android:layout_margin="20dp"
+            android:hint=".."
+            android:phoneNumber="true" />
+
+        <TextView
+            android:id="@+id/ccccc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/et_777"
+            android:layout_centerHorizontal="true"
+            android:text="再次重播的时间（秒 为单位）"
+            android:textColor="#995555"
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/et_888"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_below="@+id/ccccc"
+            android:layout_margin="20dp"
+            android:hint=".."
+            android:phoneNumber="true" />
+
+        <Button
+            android:id="@+id/bt_start"
+            android:layout_width="match_parent"
+            android:layout_height="28dp"
+            android:layout_below="@+id/et_888"
+            android:layout_margin="50dp"
+            android:background="@drawable/selector_button"
+            android:gravity="center"
+            android:text="开始"
+            android:textColor="#FFFFFF" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_margin="15dp"
+            android:text="*   本APP只作为方便重播电话,切勿用于其他非法用途,否则一切后果自行负责"
+            android:textColor="#000000"
+            android:textSize="12sp" />
+    </RelativeLayout>
+
+</LinearLayout>
